@@ -1,0 +1,11 @@
+=== OS and architecture ===
+Linux aarch64
+=== Python ===
+Python 3.10.13
+=== CPU and memory ===
+4
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       2.1Gi       1.1Gi        67Mi       4.4Gi       5.4Gi
+Swap:          4.0Gi          0B       4.0Gi
+=== Dependency check ===
+No broken requirements found.

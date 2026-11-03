@@ -1,0 +1,6 @@
+=== Batch size 1 ===
+ concurrency  requests   rps  p50_ms  p95_ms  p99_ms  errors  replicas     versions
+           1      2532 633.0     1.4     2.2     4.3       0         1 {'v1': 2532}
+=== Batch size 100 ===
+ concurrency  requests   rps  p50_ms  p95_ms  p99_ms  errors  replicas     versions
+           1      1793 448.2     2.0     2.9     4.4       0         1 {'v1': 1793}

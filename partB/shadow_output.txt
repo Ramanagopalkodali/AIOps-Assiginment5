@@ -1,0 +1,7 @@
+Matched requests: 200 per server
+Versions verified: prod=v1, candidate=v2
+Mean absolute ETA difference: 9.484 minutes
+Difference >10 minutes: 70/200 (35.00%)
+Prod HTTP p95: 6.866 ms
+Candidate HTTP p95: 7.277 ms
+PASS: B.3 shadow comparison

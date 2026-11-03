@@ -1,0 +1,22 @@
+2026-11-03 23:54:39,278	INFO worker.py:1821 -- Started a local Ray instance.
+Ray logical CPUs: 2
+INFO 2026-11-03 23:54:42,023 serve 12005 -- Started Serve in namespace "serve".
+INFO 2026-11-03 23:54:42,033 serve 12005 -- Connecting to existing Serve app in namespace "serve". New http options will not be applied.
+WARNING 2026-11-03 23:54:42,033 serve 12005 -- The new client HTTP config differs from the existing one in the following fields: ['location']. The new HTTP config is ignored.
+INFO 2026-11-03 23:54:46,198 serve 12005 -- Application 'eta' is ready at http://127.0.0.1:8000/.
+INFO 2026-11-03 23:54:46,199 serve 12005 -- Deployed app 'eta' successfully.
+PASS 1: v2 share 213/1000 (21.3%), within 16%–24%
+PASS 2: 200/200 repeat requests kept their original arm
+INFO 2026-11-03 23:54:59,548 serve 12005 -- Deleting app ['eta']
+INFO 2026-11-03 23:55:02,664 serve 12005 -- Connecting to existing Serve app in namespace "serve". New http options will not be applied.
+WARNING 2026-11-03 23:55:02,664 serve 12005 -- The new client HTTP config differs from the existing one in the following fields: ['location']. The new HTTP config is ignored.
+INFO 2026-11-03 23:55:06,795 serve 12005 -- Application 'eta' is ready at http://127.0.0.1:8000/.
+INFO 2026-11-03 23:55:06,796 serve 12005 -- Deployed app 'eta' successfully.
+PASS 3: 200/200 assignments survived delete and redeploy
+INFO 2026-11-03 23:55:08,786 serve 12005 -- Connecting to existing Serve app in namespace "serve". New http options will not be applied.
+WARNING 2026-11-03 23:55:08,786 serve 12005 -- The new client HTTP config differs from the existing one in the following fields: ['location']. The new HTTP config is ignored.
+INFO 2026-11-03 23:55:13,817 serve 12005 -- Application 'eta' is ready at http://127.0.0.1:8000/.
+INFO 2026-11-03 23:55:13,817 serve 12005 -- Deployed app 'eta' successfully.
+PASS 4: weight 0.2 → 0.5 grew v2 from 213 to 509 customers, with 0 v2-to-v1 moves
+PASS 5: X-Beta: 1 routed 50/50 v1 customers to v2
+PASS: C.2 canary verification

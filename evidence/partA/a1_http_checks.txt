@@ -1,0 +1,6 @@
+Valid 200 {'predictions': [102.2], 'model_version': 'v1', 'request_id': 'a1-check'}
+Invalid distance 422 {'error': 'validation_failed', 'details': [{'field': 'instances[0].distance_km', 'msg': 'Input should be greater than or equal to 0.1'}], 'request_id': 'fca956ca-bbcb-4d43-96a0-ac0586c9b618'}
+Infeasible 422 {'error': 'validation_failed', 'details': [{'field': 'instances[0]', 'msg': 'Value error, infeasible delivery: distance and stops are too high'}], 'request_id': '2ccc868f-54f7-443e-9139-b137813fa9a6'}
+Health 200 {'status': 'ok', 'model_version': 'v1', 'request_id': '73eef2a0-5647-489b-8e01-19c930d96957'}
+Metrics 200: request counter and latency histogram present
+PASS: A.1 live checks

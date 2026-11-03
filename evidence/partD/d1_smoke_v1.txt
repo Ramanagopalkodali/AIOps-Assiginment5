@@ -1,0 +1,9 @@
+PASS: Valid batch returns HTTP 200
+PASS: Arm and model version are both v1
+PASS: One prediction per input row
+PASS: All ETA predictions are finite numbers
+PASS: All smoke fixture ETAs are positive and at most 24 hours
+PASS: Empty batch returns HTTP 422
+HTTP p95 over 30 requests: 17.16 ms
+PASS: HTTP p95 is within 80 ms
+PASS: D.1 smoke test for v1

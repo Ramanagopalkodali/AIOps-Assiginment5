@@ -1,0 +1,30 @@
+2026-11-03 23:48:24,357	INFO worker.py:1821 -- Started a local Ray instance.
+INFO 2026-11-03 23:48:27,111 serve 11045 -- Started Serve in namespace "serve".
+INFO 2026-11-03 23:48:27,122 serve 11045 -- Connecting to existing Serve app in namespace "serve". New http options will not be applied.
+WARNING 2026-11-03 23:48:27,122 serve 11045 -- The new client HTTP config differs from the existing one in the following fields: ['location']. The new HTTP config is ignored.
+[36m(ProxyActor pid=11190)[0m INFO 2026-11-03 23:48:27,089 proxy 10.0.2.15 -- Proxy starting on node ed7bef9783435f5fe7ee7a84adda59a8092a04912aecdcd1d93e4a47 (HTTP port: 8000).
+[36m(ProxyActor pid=11190)[0m INFO 2026-11-03 23:48:27,106 proxy 10.0.2.15 -- Got updated endpoints: {}.
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:27,192 controller 11189 -- Deploying new version of Deployment(name='EtaProd', app='eta') (initial target replicas: 2).
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:27,193 controller 11189 -- Deploying new version of Deployment(name='EtaCandidate', app='eta') (initial target replicas: 1).
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:27,194 controller 11189 -- Deploying new version of Deployment(name='EtaRouter', app='eta') (initial target replicas: 1).
+[36m(ProxyActor pid=11190)[0m INFO 2026-11-03 23:48:27,195 proxy 10.0.2.15 -- Got updated endpoints: {Deployment(name='EtaRouter', app='eta'): EndpointInfo(route='/', app_is_cross_language=False)}.
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:27,297 controller 11189 -- Adding 2 replicas to Deployment(name='EtaProd', app='eta').
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:27,298 controller 11189 -- Adding 1 replica to Deployment(name='EtaCandidate', app='eta').
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:27,299 controller 11189 -- Adding 1 replica to Deployment(name='EtaRouter', app='eta').
+INFO 2026-11-03 23:48:31,250 serve 11045 -- Application 'eta' is ready at http://127.0.0.1:8000/.
+INFO 2026-11-03 23:48:31,250 serve 11045 -- Deployed app 'eta' successfully.
+Ray logical CPUs: 2
+[36m(ServeReplica:eta:EtaProd pid=11332)[0m INFO 2026-11-03 23:48:31,304 eta_EtaProd arp5cucq 2e78e91a-1fcb-4bdb-bfc8-b5be95b39ac0 -- CALL /v1/models/eta:predict OK 6.5ms
+[36m(ServeReplica:eta:EtaRouter pid=11393)[0m INFO 2026-11-03 23:48:31,306 eta_EtaRouter f1ryt8a0 2e78e91a-1fcb-4bdb-bfc8-b5be95b39ac0 -- POST /v1/models/eta:predict 200 45.5ms
+HTTP 200 arm=v1 response={'predictions': [102.2], 'model_version': 'v1', 'arm': 'v1'}
+HTTP 200 arm=v2 response={'predictions': [103.9], 'model_version': 'v2', 'arm': 'v2'}
+PASS: C.1 prod routing and candidate header override
+[36m(ServeReplica:eta:EtaCandidate pid=11392)[0m INFO 2026-11-03 23:48:31,337 eta_EtaCandidate 5tuf6439 5eaa70bc-4037-4128-87aa-0c97f3027d7f -- CALL /v1/models/eta:predict OK 4.9ms
+[36m(ServeReplica:eta:EtaRouter pid=11393)[0m INFO 2026-11-03 23:48:31,338 eta_EtaRouter f1ryt8a0 5eaa70bc-4037-4128-87aa-0c97f3027d7f -- POST /v1/models/eta:predict 200 24.5ms
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:31,412 controller 11189 -- Removing 2 replicas from Deployment(name='EtaProd', app='eta').
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:31,412 controller 11189 -- Removing 1 replica from Deployment(name='EtaCandidate', app='eta').
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:31,412 controller 11189 -- Removing 1 replica from Deployment(name='EtaRouter', app='eta').
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:33,438 controller 11189 -- Replica(id='76fmoctg', deployment='EtaProd', app='eta') is stopped.
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:33,438 controller 11189 -- Replica(id='arp5cucq', deployment='EtaProd', app='eta') is stopped.
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:33,439 controller 11189 -- Replica(id='5tuf6439', deployment='EtaCandidate', app='eta') is stopped.
+[36m(ServeController pid=11189)[0m INFO 2026-11-03 23:48:33,440 controller 11189 -- Replica(id='f1ryt8a0', deployment='EtaRouter', app='eta') is stopped.
