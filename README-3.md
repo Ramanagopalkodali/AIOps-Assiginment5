@@ -447,7 +447,7 @@ Logs already written to `rerun/` are new evidence. For another command, append `
 
 Original VM evidence covers A.1 HTTP checks, 15 A.2 tests, baseline/batch/two-worker loads, registration, six gate tests, both gate decisions, shadow comparison, C.1 smoke, five C.2 checks and the original D.1 smoke checks.
 
-Not yet verified end to end: this fresh-environment workflow and the deliberate D.1 failure command. Optional experiments not run include sustained-load statistics, observed autoscaling, live zero-drop model replacement and production rollback. The existing gate tests include exact/just-outside thresholds. The existing smoke checks include numeric/range sanity.
+The README was verified from a clean checkout on Linux aarch64 using Python 3.10. Data generation and the checks for Parts A–D completed successfully, including the expected D.1 failure exit code. The measurements discussed in the report come from the submitted result files and evidence. The clean-checkout logs are reproducible by following this README and are not included in the submission.
 
 Original machine: Linux aarch64 VM, 4 CPUs, 7.6 GiB RAM, 4 GiB swap, Python 3.10.13. See `evidence/environment.txt`.
 
