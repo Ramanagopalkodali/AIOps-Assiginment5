@@ -10,13 +10,8 @@
    - Used AI alongside the assignment and course materials to understand FastAPI validation and metrics, load testing with Little's Law, MLflow models and aliases, promotion gates, shadow testing, Ray Serve, stable hashing and release smoke tests.
    - **Impact:** Helped me understand how the four parts connect and interpret my results.
 
-2. **Code Generation**
-   - Used GPT to help write the implementation and tests in `partA/` through `partD/`, providing the relevant course materials as references for developing assignment-specific code. These included the Lecture 4a–4c REST API, MLflow and Ray Serve exercises. The supplied starter files (`eta_data.py`, `load_test.py`) were not changed.
-   - Worked through the assignment section by section, applying the code and checking execution outputs against the requirements and rubric.
-   - **Impact:** Helped with implementation and testing while I ran the stages, measured results and collected evidence.
-   - 
 2. Code Generation
-- Used GPT to help write the implementation and tests in partA/ through partD/, using the course’s Lecture 4a–4c serving exercises as references. The supplied eta_data.py and load_test.py were unchanged.
+- Used GPT to help write the implementation and tests in partA/ through partD/, using the course’s Lecture 4a–4c serving exercises as references but the codes from it were not directly used , I modified them with GPT and made teh currect versions. The supplied eta_data.py and load_test.py were unchanged.
 - With AI assistance, I changed the integer-field validation after a valid CSV-derived request was rejected: pandas had represented integer-valued inputs as floats. I removed strict type enforcement while retaining the integer fields, range limits and infeasible-delivery rule. The valid request then returned HTTP 200, while invalid requests still returned HTTP 422.
 - Impact: Helped adapt the implementation to the supplied data while preserving the required validation behavior.
 
