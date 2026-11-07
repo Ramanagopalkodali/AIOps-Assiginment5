@@ -8,6 +8,7 @@ AIOps-Assiginment5-rerun/
 ├── Analysis.md
 ├── eta_data.py
 ├── load_test.py
+|-- Report.pdf
 ├── requirements.txt
 ├── partA/
 │   ├── eta_app.py
@@ -26,7 +27,7 @@ AIOps-Assiginment5-rerun/
 │   └── smoke_eta.py
 ├── evidence/                 # original logs and screenshots
 ├── data/                     # generated data and models
-└── rerun/                    # new results from these commands
+└── rerun/                    # new results from these commands, this is not included in this repo , but when cloned and rerun it appears
 ```
 
 Add `REPORT.pdf` (or `REPORT.md`) and the AI disclosure before submission. This README assumes Part D has been renamed to `partD/smoke_eta.py`.
