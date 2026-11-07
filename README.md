@@ -455,5 +455,5 @@ Original machine: Linux aarch64 VM, 4 CPUs, 7.6 GiB RAM, 4 GiB swap, Python 3.10
 
 Use `Module4_<rollno>.zip` with the report, required partA–partD files and reproduction instructions. Exclude models, databases, MLflow artifacts, environments, caches and OS metadata. Regenerate data/models using the commands above.
 
-Course starter files and concepts are from https://github.com/sudarsun/DA3408. Document ChatGPT assistance in the AI disclosure, following the course AI fair-use policy.
+Course starter files and concepts are from https://github.com/sudarsun/DA3408. I have Documented ChatGPT assistance in the AI disclosure, following the course AI fair-use policy.
 
