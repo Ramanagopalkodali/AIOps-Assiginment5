@@ -14,15 +14,15 @@
    - Used GPT to help write the implementation and tests in `partA/` through `partD/`, providing the relevant course materials as references for developing assignment-specific code. These included the Lecture 4a–4c REST API, MLflow and Ray Serve exercises. The supplied starter files (`eta_data.py`, `load_test.py`) were not changed.
    - Worked through the assignment section by section, applying the code and checking execution outputs against the requirements and rubric.
    - **Impact:** Helped with implementation and testing while I ran the stages, measured results and collected evidence.
-
+   - 
+2. Code Generation
+- Used GPT to help write the implementation and tests in partA/ through partD/, using the course’s Lecture 4a–4c serving exercises as references. The supplied eta_data.py and load_test.py were unchanged.
+- With AI assistance, I changed the integer-field validation after a valid CSV-derived request was rejected: pandas had represented integer-valued inputs as floats. I removed strict type enforcement while retaining the integer fields, range limits and infeasible-delivery rule. The valid request then returned HTTP 200, while invalid requests still returned HTTP 422.
+- Impact: Helped adapt the implementation to the supplied data while preserving the required validation behavior.
 
 3. Debugging and Troubleshooting
 - Used AI to investigate problems encountered during execution. For example, Ray Serve initially failed to serialize the FastAPI application with a cannot pickle '_thread.lock' object error. Installing older FastAPI and Starlette versions in my main environment then caused a Streamlit dependency conflict. I restored the main environment and installed the compatible serving packages separately under .local/partC/serve-deps, selecting them through PYTHONPATH for Part C. I reran the smoke check and verified that normal requests reached v1 and the X-Beta: 1 override reached v2.
 - Impact: Helped resolve the compatibility issue while preserving the dependencies needed by my other work, and enabled the Ray Serve verification to proceed.
-- 
-3. **Debugging and Troubleshooting**
-   - Used AI to investigate errors encountered during execution, including strict integer validation, Python and package compatibility, FastAPI serialization with Ray Serve and keeping the service running during smoke tests. I applied suggested fixes and reran the affected steps.
-   - **Impact:** Helped resolve execution problems and complete a fresh-checkout rerun of the README workflow.
 
 4. **Report, Command and Documentation Assistance**
    - Used AI to explain terminal commands and help draft and revise `README.md`, report explanations and results tables using my saved outputs and the rubric's requested topics.
