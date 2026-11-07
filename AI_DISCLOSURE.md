@@ -15,6 +15,11 @@
    - Worked through the assignment section by section, applying the code and checking execution outputs against the requirements and rubric.
    - **Impact:** Helped with implementation and testing while I ran the stages, measured results and collected evidence.
 
+
+3. Debugging and Troubleshooting
+- Used AI to investigate problems encountered during execution. For example, Ray Serve initially failed to serialize the FastAPI application with a cannot pickle '_thread.lock' object error. Installing older FastAPI and Starlette versions in my main environment then caused a Streamlit dependency conflict. I restored the main environment and installed the compatible serving packages separately under .local/partC/serve-deps, selecting them through PYTHONPATH for Part C. I reran the smoke check and verified that normal requests reached v1 and the X-Beta: 1 override reached v2.
+- Impact: Helped resolve the compatibility issue while preserving the dependencies needed by my other work, and enabled the Ray Serve verification to proceed.
+- 
 3. **Debugging and Troubleshooting**
    - Used AI to investigate errors encountered during execution, including strict integer validation, Python and package compatibility, FastAPI serialization with Ray Serve and keeping the service running during smoke tests. I applied suggested fixes and reran the affected steps.
    - **Impact:** Helped resolve execution problems and complete a fresh-checkout rerun of the README workflow.
