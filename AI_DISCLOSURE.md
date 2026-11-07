@@ -23,14 +23,14 @@
    - Used AI to explain terminal commands and help draft and revise `README.md`, report explanations and results tables using my saved outputs and the rubric's requested topics.
    - **Impact:** Helped organize the reproduction instructions and present the results and limitations within the four-page limit.
 
-## Responsibility
+## Responsibility 
 
-- I ran the services, tests and experiments on my Linux aarch64 VM with 4 logical CPUs, 7.6 GiB RAM and Python 3.10.13 for the original measurements.
-- The screenshots, logs and measured results come from actual executions. The report identifies untested behavior and proposed release criteria.
-- I acknowledge AI assistance with the code, tests and documentation and remain responsible for the submission's correctness and for explaining, modifying and troubleshooting the code.
+- I have reviewed and the  ran the services, tests and experiments on my laptop MAC in side the VritualBox(Linux aarch64 VM) with 4 logical CPUs, 7.6 GiB RAM and Python 3.10.13 for the original measurements.
+- The screenshots, logs and measured results all comes from actual executions that i have run and the vedio record can act as a proof for that and The report identifies untested behavior and proposed release criteria.
+- I acknowledge that I have used  AI assistance to help with the code and debugging , tests and documentation reformating and remain responsible for the submission's correctness and for explaining, for modifying the codes when there were errors and troubleshooting the code.
+-  I have checked that every number in `REPORT.pdf` matches the output files in `partA/` to `partD/
 
 ## References
 
 - [DA3408 course repository](https://github.com/sudarsun/DA3408): assignment, supplied starter files and Lecture 4a–4c serving exercises (notebook filenames begin with `Lecture 10`).
-- [Course AI fair-use code of conduct](https://github.com/sudarsun/DA3408/blob/main/AI-fair-use-code-of-conduct.pdf).
 - [OpenAI ChatGPT](https://chatgpt.com).
