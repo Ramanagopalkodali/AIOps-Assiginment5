@@ -2,6 +2,16 @@
 
 Run from the repository root: python -m pytest -q partA/test_eta_app.py
 """
+"""Tests for the ETA service — Part A.2.
+
+Course reference: Lecture 4a REST API Serving exercise, section 2, which checks
+valid requests, invalid values, missing fields and empty batches over HTTP.
+
+The TestClient cases for batch limits/order, request IDs, metrics and inference
+failure follow assignment A.2. Tests developed with ChatGPT assistance.
+
+Source: https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20REST_API_Serving_Exercise.ipynb
+"""
 
 import re
 import uuid
