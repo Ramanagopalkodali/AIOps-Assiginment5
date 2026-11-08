@@ -1,3 +1,16 @@
+"""Ray Serve application with a sticky customer canary — Part C.1.
+
+Course reference: Lecture 4c Ray Serve exercise, sections 0 and 2–4.
+Relevant patterns include loading a model once per replica, composing a FastAPI
+ingress router with model deployments, fractional CPUs and autoscaling settings.
+
+The lecture uses random routing per request. This assignment requires stable
+customer routing, implemented with SHA-256, plus the X-Beta override.
+ETA-specific implementation developed with ChatGPT assistance.
+
+Source: https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20Ray_Serve_Exercise.ipynb
+"""
+
 """Ray Serve deployment for the SwiftParcel sticky canary."""
 
 import hashlib
