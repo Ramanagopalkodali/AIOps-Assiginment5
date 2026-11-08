@@ -1,3 +1,15 @@
+"""Tests for the ETA promotion decision — Part B.2.
+
+Course reference: Lecture 4b MLflow Serving exercise, section 7 Task A and its
+solution, which evaluate promotion using different improvement thresholds.
+
+The assignment specifies the ETA gate criteria. These pytest cases check exact
+thresholds, individual just-outside failures and a stricter gain override.
+Tests developed from course with some help from  ChatGPT and I cross checked them.
+
+Source: https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20MLflow_Serving_Exercise.ipynb
+"""
+
 import pytest
 
 from partB.eta_mlflow import decide
