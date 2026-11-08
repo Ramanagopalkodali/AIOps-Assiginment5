@@ -1,3 +1,15 @@
+"""MLflow registration and promotion gates for ETA models — Parts B.1–B.2.
+
+Course reference: Lecture 4b MLflow Serving exercise, sections 0–3 and section 7
+Task A. Relevant patterns include PythonModel wrappers, bundle artifacts,
+signatures, input examples, registry aliases and evaluation on fresh data.
+
+The ETA output format, pinned dependencies, pure decision function, MAE slice
+checks and latency gate follow the assignment. Developed from the course and some of my choices with ChatGPT assistance.
+
+Source: https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20MLflow_Serving_Exercise.ipynb
+"""
+
 """Register the SwiftParcel v1 and v2 ETA models in MLflow."""
 
 import os
