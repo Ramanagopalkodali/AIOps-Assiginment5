@@ -11,7 +11,7 @@
    - **Impact:** Helped me understand how the four parts connect and interpret my results.
 
 2. Code Generation
-- Used GPT to help write the implementation and tests in partA/ through partD/, using the course’s Lecture 4a–4c serving exercises as references but the codes from it were not directly used , I modified them with GPT and made teh currect versions. The supplied eta_data.py and load_test.py were unchanged.
+- Used GPT to help with some parts of the implementation and tests in partA/ through partD/  have cited the excat references inside the files it self with doc strings at the start of each file. ,Ex: using the course’s Lecture 4a–4c serving exercises as references but the codes from it were not directly used , I modified them with GPT and made teh currect versions. The supplied eta_data.py and load_test.py were unchanged.
 - With AI assistance, I changed the integer-field validation after a valid CSV-derived request was rejected: pandas had represented integer-valued inputs as floats. I removed strict type enforcement while retaining the integer fields, range limits and infeasible-delivery rule. The valid request then returned HTTP 200, while invalid requests still returned HTTP 422.
 - Impact: Helped adapt the implementation to the supplied data while preserving the required validation behavior.
 
