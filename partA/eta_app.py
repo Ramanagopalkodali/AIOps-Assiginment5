@@ -2,6 +2,17 @@
 
 Run from the repository root with ``uvicorn partA.eta_app:app --port 8000``.
 Set ETA_MODEL to select another model bundle before starting the process.
+
+Citation:
+
+Course reference: Lecture 4a REST API Serving exercise, sections 0 and 2
+(rest_app.py and input validation). Relevant ideas include loading the model
+once, preserving feature order, Pydantic validation, health checks and middleware.
+
+The ETA validation rules, request IDs, structured errors and Prometheus metrics
+follow the assignment requirements. Developed with ChatGPT assistance.
+
+Source: https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20REST_API_Serving_Exercise.ipynb
 """
 
 import logging
