@@ -1,3 +1,15 @@
+"""Verify sticky ETA canary routing over HTTP — Part C.2.
+
+Course reference: Lecture 4c Ray Serve exercise, sections 1, 2 and 6:
+start a local application, measure its traffic split and change its configuration.
+
+The five assignment-specific checks cover share, repeat-request stickiness,
+redeployment stability, increasing the canary weight and the beta override.
+Developed with ChatGPT assistance; this script verifies routing behavior.
+
+Source: https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20Ray_Serve_Exercise.ipynb
+"""
+
 """Verify SwiftParcel's Ray Serve canary over HTTP."""
 
 import math
