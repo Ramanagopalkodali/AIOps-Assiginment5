@@ -1,3 +1,18 @@
+"""Run the ETA release gate against a live prediction endpoint — Part D.1.
+
+Course references: Lecture 4a REST API Serving exercise, sections 1–3
+(HTTP requests, validation checks and timing), and Lecture 4c Ray Serve exercise,
+section 6 (promotion and rollback).
+
+The CLI and assertions follow assignment D.1: expected version, prediction count,
+finite and bounded positive ETAs, empty-batch rejection and HTTP p95.
+Developed with ChatGPT assistance.
+
+Sources:
+https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20REST_API_Serving_Exercise.ipynb
+https://github.com/sudarsun/DA3408/blob/main/Lecture%2010%20--%20Ray_Serve_Exercise.ipynb
+"""
+
 """Run the ETA release gate against a live prediction endpoint."""
 
 import argparse
